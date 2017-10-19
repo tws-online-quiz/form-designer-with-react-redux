@@ -62,3 +62,4 @@ npm install
 5. [NPM 下载安装](https://github.com/npm/npm)
 6. [Git 参考手册](https://git-scm.com/docs)
 7. [React 入门实例教程](http://www.ruanyifeng.com/blog/2015/03/react.html)
+8. [Redux 入门教程](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html)
