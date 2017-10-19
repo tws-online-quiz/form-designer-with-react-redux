@@ -1,0 +1,23 @@
+{
+  "name": "Form Designer with React",
+  "version": "1.0.0",
+  "description": "Powered by ThoughtWorks School",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tw-online-quiz/form-designer-with-react.git"
+  },
+  "author": "ThoughtWorks School",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/tw-online-quiz/form-designer-with-react/issues"
+  },
+  "homepage": "https://school.thoughtworks.cn",
+  "dependencies": {
+    "jquery-ui": "1.12.1",
+    "lodash": "^4.17.4",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  }
+}
