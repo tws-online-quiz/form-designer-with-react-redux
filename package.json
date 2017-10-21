@@ -1,15 +1,15 @@
 {
-  "name": "Form Designer with React",
+  "name": "form-designer-with-react-and-redux",
   "version": "1.0.0",
   "description": "Powered by ThoughtWorks School",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tw-online-quiz/form-designer-with-react.git"
+    "url": "git+https://github.com/tw-online-quiz/form-designer-with-react-and-redux.git"
   },
   "author": "ThoughtWorks School",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/tw-online-quiz/form-designer-with-react/issues"
+    "url": "https://github.com/tw-online-quiz/form-designer-with-react-and-redux/issues"
   },
   "homepage": "https://school.thoughtworks.cn",
   "dependencies": {
