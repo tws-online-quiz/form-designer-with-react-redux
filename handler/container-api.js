@@ -1,17 +1,10 @@
 import store from '../store';
-import { showEditorAction, showPreviewAction } from '../actions/container-action';
-
-/**
- * Get all users
- */
+import { showEditorAction, showPreviewerAction } from '../actions/container-action';
 
 export function showEditor() {
-    store.dispatch(showEditorAction());
+  store.dispatch(showEditorAction());
 }
 
-export function showPreview(){
-    store.dispatch(showPreviewAction());
+export function showPreviewer() {
+  store.dispatch(showPreviewerAction());
 }
-
-
-

@@ -1,15 +1,13 @@
 import React, { Component, PropTypes } from 'react'
 import * as editorAPI from "../handler/form-editor-api"
-import DialogButton from "../components/DialogButton.js"
-import $ from "jquery"
+import DialogButton from "./DialogButton.js"
 
-class FormEditor extends Component{
-
-   constructor(props){
-     super(props);
-     this.removeItem = this.removeItem.bind(this);
-     this.addItem = this.addItem.bind(this);
-   }
+class FormEditor extends Component {
+  constructor(props){
+    super(props);
+    this.removeItem = this.removeItem.bind(this);
+    this.addItem = this.addItem.bind(this);
+  }
 
   removeItem(event){
     let index = $(event.currentTarget).data("item-index");
@@ -25,14 +23,14 @@ class FormEditor extends Component{
 
       <div>
         <ul>
-           {this.props.items.map((item,index) => {
-             return (<li key={index}>
-                        <input type={item.type} />
-               <button className="btn btn-default btn-sm" onClick={this.removeItem} data-item-index={index} >
-                 -
-               </button>
-             </li>)
-           })}
+          {this.props.items.map((item,index) => {
+            return (<li key={index}>
+              <input type={item.type} />
+              <button className="btn btn-default btn-sm" onClick={this.removeItem} data-item-index={index} >
+                -
+              </button>
+            </li>)
+          })}
         </ul>
         <DialogButton addItem={this.addItem}/>
       </div>
@@ -40,4 +38,4 @@ class FormEditor extends Component{
   }
 }
 
-export default FormEditor
+export default FormEditor;

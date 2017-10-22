@@ -6,15 +6,15 @@ import $ from "jquery"
 import 'jquery-ui'
 
 class DialogButton extends Component{
-
   constructor(props) {
     super(props);
+    this.openDialog = this.openDialog.bind(this);
   }
 
-  openDialog(e){
+  openDialog(e) {
     e.preventDefault();
 
-    var $dialog = $('<div>').dialog({
+    let $dialog = $('<div>').dialog({
       title: 'Choose Type',
       width: 400,
       closeText: '',
@@ -24,7 +24,7 @@ class DialogButton extends Component{
       }
     });
 
-    var closeDialog = function(e){
+    let closeDialog = function(e){
       e.preventDefault();
       $dialog.dialog('close');
     }
@@ -33,9 +33,8 @@ class DialogButton extends Component{
   }
 
   render() {
-    var self=this;
     return (<div>
-      <button className="btn btn-default btn-sm" onClick={this.openDialog.bind(this)}>
+      <button className="btn btn-default btn-sm" onClick={this.openDialog}>
         +
       </button>
     </div>);

@@ -13,24 +13,24 @@ const initialItemsState  = {
 
 function itemsReducer(state = initialItemsState, action) {
   var type = action.type;
-    if(type == types.ADD_ITEM) {
+    if (type == types.ADD_ITEM) {
       let newItems = _.concat(state.items, action.item);
 
       return _.assign({}, state, {items: newItems});
     }
-  
-    if(type == types.REMOVE_ITEM) {
-      let newItems = _.filter(state.items,(x, index)=> {return index != action.index});
+
+    if (type == types.REMOVE_ITEM) {
+      let newItems = _.filter(state.items, (x, index) => index != action.index);
       return _.assign({}, state, {items: newItems});
     }
-    return state
+    return state;
 }
 
 function formReducer(state = initializedFormState, action) {
   switch (action.type) {
     case types.SHOW_EDITOR:
       return _.assign({}, state, {status:"edit"});
-    case types.SHOW_PREVIEW:
+    case types.SHOW_PREVIEWER:
       return _.assign({}, state, {status:"preview"});
     default:
       return state;

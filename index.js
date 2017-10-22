@@ -4,9 +4,8 @@ import { createStore } from 'redux'
 import MyContainer from './components/MyContainer.js'
 import store from './store';
 
-const rootEl = document.getElementById('root')
+const rootEl = document.getElementById('root');
 
-console.log(store.getState().formState.status);
 function render() {
   ReactDOM.render(
       <MyContainer
@@ -17,5 +16,5 @@ function render() {
   )
 }
 
-render()
-store.subscribe(render)
+render();
+store.subscribe(render);

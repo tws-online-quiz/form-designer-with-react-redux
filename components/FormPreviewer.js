@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react'
 
-
 class FormPreviewer extends Component{
   constructor(props){
     super(props);
@@ -21,4 +20,4 @@ class FormPreviewer extends Component{
   }
 }
 
-export default FormPreviewer
+export default FormPreviewer;
