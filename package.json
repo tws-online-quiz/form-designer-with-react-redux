@@ -1,23 +1,47 @@
 {
-  "name": "form-designer-with-react-and-redux",
+  "name": "form-designer-with-react-redux",
   "version": "1.0.0",
   "description": "Powered by ThoughtWorks School",
+  "scripts": {
+    "start": "node server.js",
+    "test": "cross-env NODE_ENV=test mocha --recursive --compilers js:babel-register",
+    "test:watch": "npm test -- --watch"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tw-online-quiz/form-designer-with-react-and-redux.git"
+    "url": "git+https://github.com/tw-online-quiz/form-designer-with-react-redux.git"
   },
   "author": "ThoughtWorks School",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/tw-online-quiz/form-designer-with-react-and-redux/issues"
+    "url": "https://github.com/tw-online-quiz/form-designer-with-react-redux/issues"
   },
   "homepage": "https://school.thoughtworks.cn",
   "dependencies": {
-    "jquery-ui": "1.12.1",
-    "lodash": "^4.17.4",
-    "react": "16.0.0",
-    "react-dom": "16.0.0",
-    "react-redux": "^5.0.6",
-    "redux": "^3.7.2"
+    "jquery": "^2.2.4",
+    "jquery-ui-dist": "^1.12.1",
+    "lodash": "^4.13.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-redux": "^4.2.1",
+    "redux": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-register": "^6.3.13",
+    "cross-env": "^1.0.7",
+    "enzyme": "^2.0.0",
+    "expect": "^1.6.0",
+    "express": "^4.13.3",
+    "mocha": "^2.2.5",
+    "node-libs-browser": "^0.5.2",
+    "react-addons-test-utils": "^0.14.7",
+    "webpack": "^1.9.11",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.9.1"
   }
 }
